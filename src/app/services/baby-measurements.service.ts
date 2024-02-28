@@ -3,17 +3,19 @@ import { Subject } from 'rxjs';
 import { BabyMeasurementModel } from '../models/baby-measurement.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BabyMeasurementsService {
   measurementsChanged = new Subject<BabyMeasurementModel[]>();
-  measurements: BabyMeasurementModel[] = []
+  measurements: BabyMeasurementModel[] = [
+    new BabyMeasurementModel(new Date(),1,1,1)
+  ];
 
-  constructor() { }
+  constructor() {}
 
   addMeasurement(babyActionData: BabyMeasurementModel) {
     // todo - sort list by date
-    this.measurements.unshift(babyActionData);
+    this.measurements.push(babyActionData);
     this.invokeMeasurementsChanged();
   }
 

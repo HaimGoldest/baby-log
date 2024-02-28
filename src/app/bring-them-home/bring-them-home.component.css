@@ -1,0 +1,312 @@
+#bthn {
+  background: black;
+  background: linear-gradient(180deg, #2F2929 0%, #111 100%);
+  display: inline-block;
+  position: fixed;
+  bottom: 30px;
+  left:50px;
+  box-shadow: 0px 4.76599px 5.56032px 0px rgba(0, 0, 0, 0.20);
+  padding: 3px;
+  border-radius: 11px;
+  z-index: 9999;
+  direction:ltr;
+  box-sizing: content-box;
+
+  }
+  #bthn[lang=he] {
+  right:50px;
+  left:auto;
+  }
+  #bthn *{
+  direction:ltr;
+  }
+
+  #bthn #bthnLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 6px 8px;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  border-radius: 11px;
+  border: 0.794px solid #867F8A;
+  font-weight: 400;
+  }
+
+  #bthn #closeBthn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  z-index: 10;
+  padding: 8px 10px;
+  }
+
+  #bthn[lang=he] #closeBthn  {
+  right: auto;
+  left:0;
+  }
+
+  #bthn .bthn-bthn-time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 1px;
+  }
+  #bthn .bthn-bthn-time-block .bthn-time {
+  font-size: 32px;
+  font-family: "Open Sans Condensed", "Open Sans", Arial, Helvetica, sans-serif;
+  display: flex;
+  gap: 3px;
+  font-weight: 700;
+  }
+  #bthn .bthn-bthn-time-block .bthn-time .bthn-digit {
+  background-color:#626060;
+  border-radius: 1px;
+  line-height: 1;
+  padding: 8px 2px;
+  margin-bottom:2px;
+  color:white;
+  width: 0.6em;
+  }
+  #bthn #bthnTimeBlocks {
+  display: flex;
+  font-size: 8px;
+  align-items: center;
+  text-transform: uppercase;
+  align-items: center;
+  color:#AFAFAF;
+  font-weight:400;
+  }
+  #bthn #bthnTimeBlocks .bthn-dots {
+  font-size: 24px;
+  line-height:1;
+  font-weight:300;
+  margin-bottom: 0.7em;
+  font-family: "Open Sans Condensed", "Open Sans", Arial, Helvetica, sans-serif;
+  color:white;
+  letter-spacing: 0;
+  leading-trim: both;
+  text-edge: cap;
+  }
+  #bthn .bthn-title-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+
+  }
+  #bthn .bthn-title-wrap svg{
+  position:relative;
+  width: auto;
+  height: auto;
+
+  }
+  #bthn .bthn-title-wrap .underline{
+  aspect-ratio: 274.27/10.16;
+  }
+
+  #bthn #bthnTitle {
+  font-size: 22px;
+  margin-top: 3px;
+  }
+  #bthn #bthnSubtitle {
+  margin-bottom: 1px;
+  display:block;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115%; /* 13.2px */
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+  text-align:center;
+  width:180px;
+  }
+  #bthn[lang=he] #bthnSubtitle {
+  margin-bottom:-2px;
+  }
+
+
+  #bthn #bthnSubtitle .red-bg {
+  background-color:#E82900
+
+  }
+
+  @media (max-width: 768px) {
+  #bthn {
+  max-width:calc(100% - 30px);
+  left:15px;
+
+  }
+  #bthn[lang=he] {
+  right:15px;
+
+  }
+  #bthn .bthn-bthn-time-block .bthn-time {
+  font-size: 26px;
+
+  }
+  }
+
+
+  #bthn.bthn-banner {
+  display: flex;
+  width: 1280px;
+  height: 250px;
+
+  position:relative;
+  inset:auto;
+  background: linear-gradient(180deg, #2F2929 0%, #111 100%);
+  box-shadow: 0px 4.76599px 5.56032px 0px rgba(0, 0, 0, 0.20);
+  border-radius:2px;
+  padding:0;
+  }
+  #bthn.bthn-banner #bthnLink{
+  border-radius: 2px;
+  border: 1px solid #867F8A;
+  padding: 32px 28px;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 30px;
+
+  }
+  #bthn.bthn-banner #closeBthn {
+  display:none;
+  }
+  #bthn.bthn-banner #bthnSubtitle {
+  font-size:44px;
+  font-weight: 600;
+  line-height: 140%; /* 64.4px */
+  letter-spacing: 0.69px;
+  margin:0;
+  flex-grow:1;
+  flex-shrink:1;
+  width:270px;
+  }
+  #bthn.bthn-banner  #bthnTimeBlocks{
+  font-size:24px;
+  }
+
+  #bthn.bthn-banner  #bthnTimeBlocks .bthn-bthn-time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 6px;
+  }
+  #bthn.bthn-banner  #bthnTimeBlocks .bthn-bthn-time-block .bthn-time {
+  font-size: 96px;
+  font-family: "Open Sans Condensed", "Open Sans", Arial, Helvetica, sans-serif;
+  display: flex;
+  gap: 3px;
+  font-weight: 700;
+
+  }
+  #bthn.bthn-banner  #bthnTimeBlocks .bthn-bthn-time-block .bthn-time .bthn-digit {
+  background-color:#626060;
+  border-radius: 3px;
+  line-height: 1;
+  padding: 12px 2px;
+  margin-bottom:6px;
+  color:white;
+  width: 0.6em;
+  }
+  #bthn.bthn-banner  #bthnTimeBlocks .bthn-dots {
+  font-size: 72px;
+  line-height:1;
+  font-weight:300;
+  margin-bottom: 0.7em;
+  font-family: "Open Sans Condensed", "Open Sans", Arial, Helvetica, sans-serif;
+  color:white;
+  letter-spacing: 0;
+  leading-trim: both;
+  text-edge: cap;
+  }
+  #bthn.bthn-banner .bthn-title-wrap{
+  display:none;
+
+  }
+  #bthn.bthn-banner .bthn-title-wrap-banner{
+  display:flex;
+  }
+  #bthn .bthn-title-wrap-banner{
+  display:none;
+  }
+
+
+  #bthn.bthn-banner-mobile {
+  display: flex;
+  width: 360px;
+  height: 250px;
+
+  position:relative;
+  inset:auto;
+  background: linear-gradient(180deg, #2F2929 0%, #111 100%);
+  box-shadow: 0px 4.76599px 5.56032px 0px rgba(0, 0, 0, 0.20);
+  border-radius:2px;
+  padding:0;
+  }
+
+  #bthn.bthn-banner-mobile #bthnLink{
+  border-radius: 2px;
+  border: 1px solid #867F8A;
+  padding: 8px 10px;
+  width: 100%;
+  gap: 6px;
+  justify-content: center;
+  }
+  #bthn.bthn-banner-mobile #closeBthn {
+  display:none;
+  }
+
+  #bthn.bthn-banner-mobile #bthnSubtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 26.4px */
+  letter-spacing: 0.36px;
+  width: 100%;
+  }
+
+  #bthn.bthn-banner-mobile  #bthnTimeBlocks{
+  font-size:12px;
+  }
+
+  #bthn.bthn-banner-mobile  #bthnTimeBlocks .bthn-bthn-time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 2px;
+  }
+  #bthn.bthn-banner-mobile  #bthnTimeBlocks .bthn-bthn-time-block .bthn-time {
+  font-size: 48px;
+  display: flex;
+  gap: 3px;
+  font-weight: 700;
+
+  }
+  #bthn.bthn-banner-mobile  #bthnTimeBlocks .bthn-bthn-time-block .bthn-time .bthn-digit {
+  border-radius: 1.5px;
+  line-height: 1;
+  padding: 6px 1px;
+  margin-bottom:6px;
+  color:white;
+  width: 0.6em;
+  }
+  #bthn.bthn-banner-mobile  #bthnTimeBlocks .bthn-dots {
+  font-size: 36px;
+  line-height:1;
+  font-weight:300;
+  margin-bottom: 0.7em;
+  color:white;
+  letter-spacing: 0;
+  leading-trim: both;
+  text-edge: cap;
+  }
+  #bthn.bthn-banner-mobile .bthn-title-wrap svg {
+  position: relative;
+  width: 306px;
+  height: 44px;
+  }

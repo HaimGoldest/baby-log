@@ -19,6 +19,8 @@ import { GrowthTrackingHeadMeasureComponent } from './growth-tracking/growth-tra
 import { GrowthTrackingInfoComponent } from './growth-tracking/growth-tracking-info/growth-tracking-info.component';
 import { GrowthTrackingNewMeasurementComponent } from './growth-tracking/growth-tracking-new-measurement/growth-tracking-new-measurement.component';
 import { GrowthTrackingInfoItemComponent } from './growth-tracking/growth-tracking-info/growth-tracking-info-item/growth-tracking-info-item.component';
+import { NgChartsModule } from 'ng2-charts';
+import { BringThemHomeComponent } from './bring-them-home/bring-them-home.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +40,9 @@ import { GrowthTrackingInfoItemComponent } from './growth-tracking/growth-tracki
     GrowthTrackingInfoComponent,
     GrowthTrackingNewMeasurementComponent,
     GrowthTrackingInfoItemComponent,
+    BringThemHomeComponent,
   ],
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, NgChartsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
